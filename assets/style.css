@@ -1,0 +1,462 @@
+body{
+    overflow-x: hidden;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Noto Sans JP', sans-serif;
+
+}
+
+html,
+body,
+header, 
+.view {
+    height: 100%;
+}
+
+/* Navbar */
+
+.logo-color{
+    color: #b87ef2 ;
+}
+.navbar{
+    transition: all 0.4s;
+}
+.navbar .nav-link{
+    color:#000000;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus{
+    color: #b87ef2
+;
+    text-decoration: none;
+}
+
+.navbar .navbar-brand{
+    color: #000000
+;
+}
+
+/* Change navbar styling on scroll */
+.navbar.active{
+    background: #fff;
+    box-shadow: 1px 2px 10px rgba(0,0,0,0.1);
+}
+
+.navbar.active .nav-link{
+    color: #000000
+;
+}
+.navbar.active .nav-link:hover,
+.navbar.active .nav-link:focus{
+    color: #b87ef2
+;
+    text-decoration: none;
+}
+ .navbar.active .navbar-brand {
+    color: #000000
+;
+ }
+
+
+/* Change navbar styling on small viewports */
+@media (max-width: 991.98px){
+    .navbar{
+        background: #fff;
+    }
+
+    .navbar .navbar-brand,
+    .navbar .nav-link{
+        color: #000000
+;
+    }
+}
+
+/* Navbar */
+
+/* Main */
+#img1{
+ 
+   transform: scaleX(-1);
+}
+.mainh{
+    color: #181818;
+}
+.mainp{
+     
+    line-height: 1.5;
+    letter-spacing: 1px;
+    color: #181818;
+    font-style: normal;
+    font-size: 16.2px;
+    opacity: 0.8;
+
+} 
+ .maincolor{
+    color: #181818;
+ }
+
+
+
+/* Button */
+   .btn-primary{
+    box-shadow: 0 0 0 100px #b87ef2
+ inset !important;
+    background: transparent !important;
+    font-weight: 700;
+    border-radius: 25px;
+    border-top-left-radius: 0px;
+     border-bottom-right-radius: 0px;
+    border: none !important;
+    background-color: #b87ef2
+ !important;
+    color: #fff;
+    transition: all 0.5s;
+   } 
+
+   #hov:hover {
+    transition: all 0.3s ease !important;
+    -webkit-transform: scale(1.2) !important;
+    -ms-transform: scale(1.2) !important;
+    transform: scale(1.2) !important;
+    z-index: 2;
+   }
+
+    .btn-md{
+        padding: 1rem 1.6rem;
+    }
+
+    .btn-primary-outline {
+        box-shadow: 0 0 0 2px #b87ef2
+ inset !important;
+        background: transparent !important;
+        font-weight: 700;
+        border-radius: 25px;
+        color: #181818 !important;
+        overflow: hidden;
+        border-top-left-radius: 0px ;
+        border-bottom-right-radius: 0px;
+        border: none !important;
+        transition: all 0.5s;
+    }
+    
+    #bookNow:hover{
+        background-color: #b87ef2
+ !important;
+        color: antiquewhite ;
+    } 
+    .card{
+        transition: all 0.5s;
+    }
+
+
+/* Pricing Table */
+.pricingTable{
+    background: #fff;
+    font-family: 'Roboto',sans-serif;
+    padding: 40px 30px 0;
+    margin: 0 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    border-radius: 0 70px 0 0 ;
+}
+.pricingTable .pricingTable-header{
+    padding: 0 0 15px;
+    margin: 0 0 20px;
+    border-bottom: 1px solid #01cad2;
+} 
+.pricingTable .title{
+    color: #01cad2;;
+    font-size: 30px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 0;
+
+}
+.pricingTable .title i{
+margin-right: 5px;
+display: inline-block;
+}
+.pricingTable .price-value{
+    color: #01cad2;
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 100px;
+    letter-spacing: -3px;
+    text-align: center;
+    margin: 0 0 20px;
+}
+.pricingTable .price-value sup{
+    font-size: 50px;
+    letter-spacing: normal;
+    vertical-align: middle;
+
+}
+
+.pricingTable .pricing-content {
+    background: linear-gradient(to right bottom,
+    #00cad4, #01cab8);
+    text-align: center;
+    padding: 40px 0;
+    margin: 0 -45px;
+    border-radius: 60px 0 0 0;
+
+}
+
+.pricingTable .pricing-content ul{
+    text-align: left;
+    padding: 0 0 25px;
+    margin: 0 0 40px;
+    list-style: none;
+    border-bottom: 1px solid #fff;
+    display: inline-block;
+}
+.pricingTable .pricing-content ul li{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+    padding: 0 0 0 30px;
+    margin: 0 0 15px;
+    position: relative;
+}
+.pricingTable .pricing-content ul li:last-child{
+    margin: 0;
+}
+.pricingTable .pricing-content  li:before{
+    content: "\f00c";
+    font-family: 'Font Awesome 5 free';
+    font-size: 16px;
+    font-weight: 900;
+    position: absolute;
+    top: 1px;
+    left: 0;
+}
+.pricingTable .pricing-content  li.disable::before{
+    content: '\f00d';
+
+}
+.pricingTable .pricing-content  li:last-child{
+    margin-bottom: 0;
+}
+.pricingTable .pricingTable-signup a{
+    color: #fff;
+    font-size: 25px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    width: 150px;
+    padding: 5px;
+    margin: 0 auto;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    display: block;
+    transition: all0.5s ease 0s;
+
+} 
+.pricingTable .pricingTable-signup a:hover{
+    text-shadow: 3px 3px rgba(255,255,255,0.5);
+    box-shadow: 3px 3px rgba(255,255,255,0.5);
+}
+.pricingTable.orange .pricingTable-header{
+    border-bottom-color: #fd9976;
+}
+.pricingTable.orange .title,
+ .pricingTable.orange .price-value{
+color: #fd9976;
+}
+.pricingTable.orange .pricing-content {
+    background: linear-gradient(to right bottom,
+    #fea980, #ff6a88 );
+
+}
+.pricingTable.purple .pricingTable-header {
+  border-bottom-color: #ff72fc;
+
+}
+.pricingTable.purple .title,
+ .pricingTable.purple .price-value{
+color: #ff72fc;
+}
+.pricingTable.purple .pricing-content {
+    background: linear-gradient(to right bottom,
+    #dc55d6, #a236bf );
+
+}
+
+@media only screen and (max-width:990px) {
+    .pricingTable {
+        margin-bottom: 40px;
+    }
+}
+
+/* Pricing Table */
+
+/* Contact US */
+.form-control{
+    padding: 1rem 1.5rem;
+    background-color: #ffffff;
+    border-color: #f2f2f4;
+    color: #181818;
+    transition: 0.4s;
+    box-shadow: none;
+    outline: none;
+    border-radius: 15px;
+
+}
+input:focus{
+    outline:none !important;
+    border: 1px solid #b87ef2
+ !important;
+    box-shadow: 0 0 10px #b87ef2
+ !important;
+    outline: #b87ef2
+ !important;
+    border-color: #b87ef2
+ !important;
+
+}
+textarea:focus{
+    outline: none !important; 
+    border: 1px solid #b87ef2
+ !important;
+    box-shadow: 0 0 10px #b87ef2
+ !important;
+    outline: #b87ef2
+ !important;
+    border-color: #b87ef2
+ !important;
+
+}
+input:hover{
+    outline: none !important; 
+    border: 1px solid #b87ef2
+ !important;
+    box-shadow: 0 0 10px #b87ef2
+ !important;
+    outline: #b87ef2
+ !important;
+    border-color: #b87ef2
+ !important;
+
+}
+
+textarea:hover{
+    outline: none !important; 
+    border: 1px solid #b87ef2
+ !important;
+    box-shadow: 0 0 10px #b87ef2
+ !important;
+    outline: #b87ef2
+ !important;
+    border-color: #b87ef2
+ !important;
+
+}
+
+
+
+
+/* Footer */
+.foot{
+    color: #181818;
+}
+.foot:hover{
+    text-decoration: none;
+    cursor: pointer;
+    color:#b87ef2 ;
+}
+
+
+
+/* Larger Screen */
+ @media (min-width: 1025px) {
+    .mylogo{
+        font-size: 25.6px;
+    }
+    .main1{
+        padding-left: 5%;
+    }
+    .mainh{
+        font-size: 65px;
+        padding-top: 5%;
+       
+    }
+    .mainh2{
+        font-size: 57px;
+          padding-top: 5%;
+    }
+    .mainh3{
+        font-size: 57px;
+        
+    }
+    .premium {
+        font-size: 57px;
+         color: #0b1b3f;
+
+    } 
+    .quotep{
+        font-size: 25px;
+        color: #181818;
+        font-weight: 600;
+    }
+    .servicesh{
+        font-size: 58px;
+
+    }
+  }
+/* Mobile Devices */
+
+
+/* Iphones */
+@media only screen and
+   (max-width:600px){
+    .mob-pad{
+        padding-top: 70px;
+        padding-left: 10%;
+
+    }
+
+   }
+
+/* IPAD Screen*/
+ @media only screen and
+   (min-device-width:768px) and
+   (max-device-width:1024px)and
+   (-webkit-min-device-pixel-ratio:2){
+    html,
+    body,
+    header,
+     .view {
+        height: 75%;
+    }
+    .main1{
+        padding-left: 10%;
+    }
+    .mainh{
+         padding-left: 15%;
+        padding-top: 15%;
+        font-size:40px;
+    }
+
+   }
+/* Ipad Pro Screen*/
+@media only screen and
+   (min-device-width:1024px) and
+   (max-device-width:1366px)and
+   (-webkit-min-device-pixel-ratio: 2){
+   
+    .main1{
+        
+        padding-left: 10%;
+    }
+    .mainh{
+       
+        padding-top: 10%;
+        font-size:50px; 
+    }
+
+   }
+  
+
